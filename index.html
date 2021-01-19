@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Material Design Lite</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<style>
+  main {
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  main p {
+    margin-top: 32px;
+    font-size: 22px;
+  }
+  
+
+
+  .titulo {
+    padding: 32 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2em;
+
+  }
+
+
+
+/* items */
+
+#secao-items {
+    background-color: #333;
+}
+
+#titulo-items {
+    color: #ffffff;
+   
+}
+
+#items {
+    padding: 16px 0 64px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #ffffff;
+
+}
+
+
+#items .item {
+    padding: 64px;
+    align-items: center;    
+}
+
+.descricao {
+    padding: 8px;
+    width: 400px;
+    margin: auto;
+       
+}
+
+.descricao p {
+    text-align: left;
+    font-size: 1.5em; 
+}
+
+
+/* Fim items */
+
+/* Demo card */
+
+.demo-card-event.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: #3E4EB8;
+}
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start;
+}
+.demo-card-event > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
+
+/* Fim Demo Card */
+
+table {
+
+    color:#333
+}
+
+
+</style>
+
+<body>
+  <main>
+    <h1>Material Design Lite</h1>
+    
+    <p>
+      MDL é framework que ajuda na elaboração do design dos sites, tanto no front end quanto para painéis administrativos.
+      Oferece opções com um design leve para uma série de componentes fundamentais para o design e usabilidade de uma página web como: ícones, botões, cards, menus,
+      cabeçalhos, tabelas etc.
+    </p>
+    
+    <hr>
+
+    
+    
+
+
+
+    <p>Abaixo estão alguns exemplos de componentes oferecidos pelo MDL:</p>
+    
+    <hr>
+
+   
+    
+  </main>
+  
+  <section id="secao-items">
+    <div class="titulo">
+      <h1 id="titulo-items">MDL Components</h1>
+    </div>
+
+    <div id="items">
+      <div class="item">
+        <div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Texto
+            </button>
+        </div>
+        <div class="descricao">
+          <p>
+           Botão com texto editável e com efeito
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="item">
+        <div>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                <i class="material-icons">add</i>
+            </button>
+        </div>
+        <div class="descricao">
+          <p>
+           Botão para adição de novo item
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="item">
+        <div>
+            <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">account_box</div>
+        </div>
+        <div class="descricao">
+          <p>
+           ícone contador
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="item">
+        <div>
+            <div class="demo-card-event mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                  <h4>
+                    Featured event:<br>
+                    May 24, 2016<br>
+                    7-11pm
+                  </h4>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Add to calendar
+                  </a>
+                  <div class="mdl-layout-spacer"></div>
+                  <i class="material-icons">event</i>
+                </div>
+              </div>
+        </div>
+        <div class="descricao">
+          <p>
+           Card para informar eventos/adicionar na agenda
+          </p>
+        
+        </div>
+      </div>
+
+      <div class="item">
+        <div>
+            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable">
+                <thead>
+                  <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Material</th>
+                    <th>Quantity</th>
+                    <th>Unit price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                    <td>250</td>
+                    <td>$2.90</td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                    <td>50</td>
+                    <td>$1.25</td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                    <td>10</td>
+                    <td>$12.35</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="descricao">
+          <p>
+            Tabela com checkbox para organizar informações
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="item">
+        <div>
+            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+                <span class="mdl-switch__label"></span>
+            </label>
+        </div>
+        <div class="descricao">
+          <p>
+            Botão para ativar e desativar funções e menus no site
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+
+</html>
